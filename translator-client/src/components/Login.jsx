@@ -20,7 +20,7 @@ function LoginPage() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        window.location = window.location + 'text-translate';
+        window.location.hash =  '/text-translate';
         // axios
         //   .post('/api/login', { username, password })
         //   .then((response) => {

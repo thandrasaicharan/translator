@@ -27,7 +27,7 @@ function RegistrationPage() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    window.location = window.location.origin  + '/text-translate';
+    window.location.hash =   '/text-translate';
     // axios
     //   .post('/api/register', { firstName, lastName, email, password })
     //   .then((response) => {

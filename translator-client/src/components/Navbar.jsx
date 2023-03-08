@@ -13,12 +13,12 @@ function AppNavbar() {
   return (
     <Navbar bg="light" expand="lg" sticky="top">
       <Container>
-        <Navbar.Brand href="/about">Translator</Navbar.Brand>
+        <Navbar.Brand href="#/about">Translator</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="/text-translate">Translate</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="#/text-translate">Translate</Nav.Link>
+            <Nav.Link href="#/about">About</Nav.Link>
           </Nav>
           <Nav>
             <NavDropdown
