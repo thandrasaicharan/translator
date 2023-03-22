@@ -1,0 +1,4 @@
+const API_SERVER_BASE_URL="https://34.72.140.231:443"
+// const API_SERVER_BASE_URL="http://127.0.0.1:5000"
+
+export {API_SERVER_BASE_URL}
