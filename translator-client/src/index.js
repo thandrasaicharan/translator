@@ -23,16 +23,15 @@ root.render(
       <HashRouter>
         <Routes>
           <Route path='/' element={<App></App>}>
-          <Route path='' element={<Translator></Translator>}></Route>
-          <Route path='*' element={<Translator></Translator>}></Route>
-            {/* <Route path='' element={<LoginPage></LoginPage>}></Route>
+          
+            <Route path='' element={<LoginPage></LoginPage>}></Route>
             <Route path='/login' element={<LoginPage></LoginPage>}></Route>
             <Route path='/register' element={<RegistrationPage></RegistrationPage>}></Route>
             <Route path='/about' element={<AboutPage></AboutPage>}></Route>
             <Route path='/text-translate' element={<Translator></Translator>}></Route>
             <Route path='/user-preference' element={<UserPreference></UserPreference>}></Route>
             <Route path='/account-settings' element={<AccountSettings></AccountSettings>}></Route>
-            <Route path='*' element={<PageNotFound></PageNotFound>}></Route> */}
+            <Route path='*' element={<PageNotFound></PageNotFound>}></Route>
           </Route>
         </Routes>
       </HashRouter>

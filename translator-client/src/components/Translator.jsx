@@ -21,10 +21,10 @@ export default function Translator() {
     const [options, setOptions] = useState([]);
     const token = useSelector(state => state.token);
     const navigate = useNavigate();
-    // if (!token) {
-    //     navigate('/login');
+    if (!token) {
+        navigate('/login');
         
-    //   }
+      }
 
       useEffect(() => {
         setLoading(true);

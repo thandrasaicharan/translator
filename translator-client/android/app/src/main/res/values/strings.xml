@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">translator</string>
-    <string name="title_activity_main">translator</string>
+    <string name="app_name">translator-client</string>
+    <string name="title_activity_main">translator-client</string>
     <string name="package_name">com.translator.app</string>
     <string name="custom_url_scheme">com.translator.app</string>
 </resources>

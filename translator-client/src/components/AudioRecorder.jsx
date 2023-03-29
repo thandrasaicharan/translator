@@ -13,10 +13,10 @@ const AudioRecorder = (props) => {
   const mediaRecorderRef = useRef(null);
   const token = useSelector(state => state.token);
   const navigate = useNavigate();
-  // if (!token) {
-  //     navigate('/login');
+  if (!token) {
+      navigate('/login');
       
-  //   }
+    }
 
   const {srcLang, destLang, setTranslatedText, setLoading} = props;
   const handleStartRecording = () => {

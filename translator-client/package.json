@@ -21,7 +21,9 @@
     "react-scripts": "5.0.1",
     "redux": "^4.2.1",
     "redux-thunk": "^2.4.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "@capacitor/android": "^4.7.0",
+    "@capacitor/core": "^4.7.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -51,9 +53,9 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/android": "^4.7.0",
+  
     "@capacitor/cli": "^4.7.1",
-    "@capacitor/core": "^4.7.1",
+    
     "@capacitor/ios": "^4.7.0",
     "gh-pages": "^5.0.0"
   }

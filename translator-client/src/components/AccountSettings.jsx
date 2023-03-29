@@ -13,11 +13,11 @@ function AccountSettings() {
 
   const token = useSelector(state => state.token);
   const navigate = useNavigate();
-  // if (!token) {
-  //   navigate('/login');
+  if (!token) {
+    navigate('/login');
   
 
-  // }
+  }
   const handleSubmit = (event) => {
     event.preventDefault();
     // check if new password matches confirm password
