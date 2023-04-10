@@ -10,6 +10,7 @@ import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import AudioRecorder from './AudioRecorder';
 import FullPageLoader from './FullPageLoader';
+import  SpeakerButton from './SpeakerButton';
 
 
 export default function Translator() {
@@ -81,8 +82,16 @@ export default function Translator() {
     }, [translatedText]);
 
 
-
+    const containsSpecialChar = (str) => {
+        var pattern = /[~`@#$%^&*()\-_=+[\]{}\\|;:<>/]/; // pattern to match special characters
+        return pattern.test(str);
+      }
+      
     const handleTextChange = (event) => {
+        if(containsSpecialChar(event.target.value)){
+            alert("Special characters are not allowed");
+            return
+        }
         setText(event.target.value);
     };
 
@@ -165,6 +174,7 @@ export default function Translator() {
                             <Card.Title>Translation</Card.Title>
                             <Card.Text>{translatedText}</Card.Text>
                         </Card.Body>
+                        <SpeakerButton text={translatedText} />
                     </Card>
                 </Col>
             </Row>
